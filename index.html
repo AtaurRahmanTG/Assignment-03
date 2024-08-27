@@ -9,19 +9,234 @@
     <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..900&display=swap" rel="stylesheet">
+
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          clifford: '#da373d',
+          'bike-primary': '#E76F51',
+          'booking-primary-bg': 'rgba(171, 239, 95, 0.5)',
+          'about-primary-bg': 'rgb(255, 255, 255)',
+        },
+      },
+    },
+  }
+</script>
+<style>
+  .font-manrope {
+    font-family: "Manrope", sans-serif;
+  }
+</style>
 </head>
-<body>
+<body class="font-manrope">
     <!-- Header Section -->
-     <header>
-        <h3>Hello , the assignment i have come</h3>
+     <header class="md:container mx-auto">
+        <div class="navbar bg-base-100">
+            <div class="navbar-start">
+              <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h8m-8 6h16" />
+                  </svg>
+                </div>
+                <ul
+                  tabindex="0"
+                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                  <li><a>Home</a></li> 
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+                </ul>
+              </div>
+              <a class="btn btn-ghost text-xl"> Rinterio</a>
+            </div>
+            <div class="navbar-center hidden lg:flex">
+              <ul class="menu menu-horizontal px-1">
+                <li><a>Home</a></li> 
+                  <li><a>Services</a></li>
+                  <li><a>Portfolio</a></li>
+                  <li><a>Blogs</a></li>
+                  <li><a>Contact Us</a></li>
+              </ul>
+            </div>
+            <div class="navbar-end">
+              <a class="btn">Book Consult</a>
+            </div>
+          </div>
+          <!-- Banner Content -->
+           <div class="  ">
+            <!-- image part -->
+             <div><img src="./assets/banner.png" alt=""></div>
+             <!-- text part -->
+             <div>
+                <h1 class="text-6xl font-bold">A barn house of this design has a <br> striking appearance</h1>
+                <p class="">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.</p>
+                <button class="btn bg-booking-primary-bg">View Details</button>
+             </div>
+           </div>
      </header>
+
+
      <!-- Main Section -->
-      <Main>
+      <Main class="md:container mx-auto">
+        <!-- About us Section -->
+         <section p-26>
+          <div class="flex gap-2">
+            <!-- text part -->
+             <div>
+              <button class="btn bg-about-primary-bg">About Us</button>
+              <h1 class="text-6xl font-bold">We design thoughtful, liveable spaces</h1>
+              <P>The barn house captivates with its blend of rustic charm and 
+                modern sophistication, featuring weathered wood, sleek metal accents.</P>
+              <!-- commercial card part -->
+               <div class="flex">
+                <div>
+                  <img src="./assets/commercial.png" alt="">
+                </div>
+                <div>
+                  <h1>Commercial</h1>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+               </div>
+               <!-- Residential card part -->
+               <div class="flex">
+                <div>
+                  <img src="./assets/residential.png" alt="">
+                </div>
+                <div>
+                  <h1>Residential</h1>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+               </div>
+             </div>
+             <!-- image part -->
+              <div>
+                <img src="./assets/Rectangle.png" alt="">
+              </div>
+          </div>
+         </section>
+         <!-- Work Process Section -->
+          <section>
+            <div>
+              <button>How we works</button>
+              <h1>Our Works Process</h1>
+              <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <!-- four cards section -->
+              <div class="flex">
+                <div>
+                  <img src="./assets/concept.png" alt="">
+                  <h1>concept</h1>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div>
+                  <img src="./assets/flow-chart.png" alt="">
+                  <h1>Design Process</h1>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div>
+                  <img src="./assets/vision.png" alt="">
+                  <h1>Supervision</h1>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+                <div>
+                  <img src="./assets/budget-planning.png" alt="">
+                  <h1>Budget Planning</h1>
+                  <p>The barn house captivates with its blend of rustic charm and modern.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- latest Portfolio Section -->
+           <!-- <section>
+            <div class=" ">
+              <button>How we works</button>
+              <h1>Our Works Process</h1>
+              <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+              <div>
+                <div>
+                  <div><img src="./assets/img1.png" alt=""></div>
+                  <div>
+                    <h1>Commercial</h1>
+                    <p>The barn house captivates with its blend of rustic charm and modern. The barn house captivates with its blend of rustic charm and modern .</p>
+                    <button>View Details</button>
+                  </div>
+                </div>
+                <div>
+                  <img src="./assets/img2.png" alt="">
+                </div>
+                <div>
+                  <img src="./assets/img3.png" alt="">
+                </div>
+                <div>
+                  <div><img src="./assets/img4.png" alt=""></div>
+                  <div>
+                    <h1>Commercial</h1>
+                     <p>The barn house captivates with its blend of rustic charm and modern. </p>
+                     <button>The barn house captivates with its blend of rustic charm and modern. </button>
+                  </div>
+                </div>
+                <div>
+                  <img src="./assets/img5.png" alt="">
+                </div>
+              </div>
+            </div>
+           </section> -->
+        <!-- Next Project Section -->
+         <section>
+          <div>
+            <button></button>
+            <h1></h1>
+            <p></p>
+            <form action="">
+              <input type="text" name="" id="" placeholder="First Name*">
+              <input type="text" name="" id="" placeholder="Last Name*">
+              <br>
+              <input type="number" name="" id="" placeholder="Number*">
+              <input type="email" name="" id="" placeholder="Email Address">
+              <br>
+              <textarea name="" id="" rows="4" cols="50" placeholder="write your message here"></textarea>
+              <br>
+              <button>Send Mail</button>
+            </form>
+          </div>
+         </section>
 
       </Main>
+
+
       <!-- Footer Section -->
        <footer>
-
+        <!-- Footer Section Start -->
+         <div>
+          <h1>Rinterio</h1>
+          <p>The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
+          <div>
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li> 
+                <li><a>Services</a></li>
+                <li><a>Portfolio</a></li>
+                <li><a>Blogs</a></li>
+                <li><a>Contact Us</a></li>
+            </ul>
+          </div>
+          <button class="btn bg-booking-primary-bg">Book Consult <i class="fa-regular fa-arrow-right"></i></button>
+         </div>
        </footer>
 </body>
 </html>
