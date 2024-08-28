@@ -86,13 +86,20 @@
                   
               </ul>
             </div> 
-          
+            <div class="flex items-center space-x-5 ml-20">
+              <a href="">
+              <i class="fa-solid fa-magnifying-glass"></i>
+               </a>
+              <a href="">
+              <i class="fa-solid fa-cart-shopping"></i>
+              </a>
+              </div>
             <div class="navbar-end  ">
               <a class="btn bg-footer-btn-bg">Book Consult <i class="fa-solid fa-arrow-right text-white -rotate-45 rounded-full bg-black p-1"></i></a>
             </div>
           </div>
           <!-- Banner Content -->
-           <div class=" border border-2 border-red-700 mt-2 p-16 max-w-7xl bg-gray-100 ">
+           <div class=" mt-2 p-16 max-w-7xl bg-white ">
             <!-- image part -->
              <div class="flex justify-center my-8">
               <img src="./assets/banner.png" alt="">
@@ -110,10 +117,10 @@
      <!-- Main Section -->
       <Main class="lg:container mx-auto">
         <!-- About us Section -->
-         <section class=" border border-2 border-red-700 mt-2 p-16 max-w-7xl bg-gray-100">
+         <section class=" mt-2 p-16 max-w-7xl bg-gray-200">
             <div class="lg:flex gap-2 ">
               <!-- text part -->
-             <div>
+             <div class="relative">
               <button class="btn bg-about-primary-bg rounded-2xl"><i class="fa-solid fa-arrow-right"></i>About Us</button>
               <h1 class="text-4xl font-bold my-4">We design thoughtful, <br> liveable spaces</h1>
               <P class="text-base my-4">The barn house captivates with its blend of rustic charm and 
@@ -138,6 +145,9 @@
                   <p>The barn house captivates with its blend of rustic charm and modern.</p>
                 </div>
                </div>
+               <div class="absolute -top-10 -left-10">
+                <img src="./assets/Vector.png" alt="">
+                </div>
              </div>
              <!-- image part -->
               <div>
@@ -146,7 +156,7 @@
             </div>
          </section>
          <!-- Work Process Section -->
-          <section class="border border-2 border-red-700 p-4 max-w-7xl bg-gray-200">
+          <section class=" p-4 max-w-7xl bg-gray-200">
             <div>
               <div class="lg:flex justify-center mb-2">
                 <button class="bg-about-primary-bg text-base font-medium rounded-lg p-1"><i class="fa-solid fa-arrow-right "></i> How we works</button>
@@ -180,13 +190,13 @@
           </section>
           <!-- latest Portfolio Section -->
            <section>
-            <div class=" border-2 border-red-700 mt-2 p-10 max-w-7xl bg-gray-200 ">
+            <div class=" mt-2 p-10 max-w-7xl bg-white ">
               <div class="lg:flex justify-center m-2 p-2"><button class="bg-footer-btn-bg text-base font-medium rounded-lg p-2 m-0"> <i class="fa-solid fa-arrow-right mr-2 "></i>Explore our Latest works</button></div>
               <h1 class="text-center text-4xl font-bold mb-5">Our Latest Portfolio</h1>
               <p class="text-center font-base mb-3">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.</p>
-              <div class="">
+              <div>
                 <div class="lg:flex mb-3">
-                  <div class="lg:flex w-3/5 ">
+                  <div class="lg:flex w-3/5 p-4 border-gray-400">
                     <div>
                     <img src="./assets/img1.png" alt="">
                     </div>
@@ -196,16 +206,16 @@
                     <button class="font-extrabold mt-2 "  >View Details <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-lime-400 p-1"></i></button>
                     </div> 
                 </div>
-                <div class="w-2/5 ml-15">
+                <div class="w-2/5 ml-15 p-4 border-gray-400">
                   <img src="./assets/img2.png" alt="">
                 </div> 
                 </div>
                 
               <div class="flex mt-2">
-                <div class="w-1/4 ">
+                <div class="w-1/4  p-4 border-gray-400">
                   <img src="./assets/img3.png" alt="">
                 </div>
-                <div class="flex lg:flex w-2/4">
+                <div class="flex lg:flex w-2/4 p-4 border-gray-400">
                   <div ><img src="./assets/img4.png" alt=""></div>
                   <div class="ml-4">
                     <h1 class="font-bold">Commercial</h1>
@@ -213,7 +223,7 @@
                      <button class="font-extrabold mt-8">View Details <i class="fa-solid fa-arrow-right -rotate-45 rounded-full bg-lime-400 p-1"></i> </button>
                   </div>
                 </div>
-                <div class="w-1/4">
+                <div class="w-1/4 p-4 border-gray-400">
                   <img src="./assets/img5.png" alt="">
                 </div>
                 </div>
@@ -222,8 +232,8 @@
            </section> 
            
         <!-- Next Project Section -->
-         <section class=" border border-2 border-red-700 mt-2 p-5 max-w-7xl ">
-          <div style="background-image: url(./assets/bg.jpg); background-size: cover; background-position: center;">
+         <section style="background-image: url(./assets/bg.jpg); background-size: cover; background-position: center;" class=" mt-2 p-5 max-w-7xl ">
+          <div>
             <div class="lg:flex justify-center m-2 p-2"><button class="bg-lime-200 text-base font-medium rounded-lg p-1"> <i class="fa-solid fa-arrow-right mr-2 "></i> Let's Connect</button></div>
               
             <h1 class="text-center text-4xl font-bold mb-5">Let’s Discuss Next Project</h1>
@@ -244,7 +254,7 @@
           </div>
          </section>
          <!-- Meaningful Section -->
-         <section class="  border-2 border-red-700 bg-white mt-2 p-7 max-w-7xl ">
+         <section class="  bg-white mt-2 p-7 max-w-7xl ">
           <div>
             <h1 class="font-bold text-2xl my-6 shadow-slate-800">Browse Ideas By Room</h1>
             <div class="grid lg:grid grid-rows-2 grid-cols-3 gap-x-12 gap-y-12">
